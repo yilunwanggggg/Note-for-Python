@@ -37,4 +37,25 @@ optimize是scipy中的一个package
 比如今天用到的fmin_tnc:
 >Minimize a function with variables subject to bounds, using gradient information in a truncated Newton algorithm. 
 
+这里是这样使用的：
+```
+import scipy.optimize as opt
+result = opt.fmin_tnc(func=cost, x0=theta, fprime=gradient, args=(X, y))
+```
+
+#### python: zip
+可以将两个数组合并，并且是一一对应组合：
+>In [1]: a = b = c = range(20)
+
+>In [2]: zip(a, b, c)
+
+>Out[2]: 
+[(0, 0, 0),
+ (1, 1, 1),
+ ...
+ (17, 17, 17),
+ (18, 18, 18),
+ (19, 19, 19)]
+
+
 
