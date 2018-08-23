@@ -2,9 +2,9 @@
 
 
 
-##2018.08.23
+## 2018.08.23
 
-####pandas: isin
+#### pandas: isin
 ```
 path = 'ex2data1.txt'
 data = pd.read_csv(path, header=None, names=['Exam 1', 'Exam 2', 'Admitted'])
