@@ -42,6 +42,7 @@ optimize是scipy中的一个package
 import scipy.optimize as opt
 result = opt.fmin_tnc(func=cost, x0=theta, fprime=gradient, args=(X, y))
 ```
+大概看明白了,这里fmin_tnc函数寻找的是func＝cost的最优解，x0就是初始值，fprime指的是利用什么函数去求解最优解什么的，比如这里它就是gradient，然后args是fprime后面所需要的参数，fprime这里在运算的时候，写的应该就是：fprime(x,X,y),其中x是从x0开始的自变量，X和y是计算需要的参数。
 
 #### python: zip
 可以将两个数组合并，并且是一一对应组合：
