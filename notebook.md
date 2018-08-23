@@ -57,5 +57,10 @@ result = opt.fmin_tnc(func=cost, x0=theta, fprime=gradient, args=(X, y))
  (18, 18, 18),
  (19, 19, 19)]
 
+这种一行的代码，虽然很难写，但看上去蛮酷的😂：
+```
+correct = [1 if ((a == 1 and b == 1) or (a == 0 and b == 0)) else 0 for (a, b) in zip(predictions, y)]
+```
+
 
 
