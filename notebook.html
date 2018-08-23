@@ -1055,8 +1055,14 @@ body .markdown-body
 .codehilite .vi{color:teal}
 .codehilite .il{color:#009999}
 .codehilite .gc{color:#999;background-color:#EAF2F5}
-</style><title>notebook</title></head><body><article class="markdown-body"><h1 id="this-is-my-notebook-for-all-the-things-about-using-python">This is my notebook for all the things about using python.<a class="headerlink" href="#this-is-my-notebook-for-all-the-things-about-using-python" title="Permanent link"></a></h1>
+</style><title>notebook</title></head><body><article class="markdown-body"><h1 id="notebook-for-python">Notebook for Python<a class="headerlink" href="#notebook-for-python" title="Permanent link"></a></h1>
+<p>2018.08.23</p>
+<p>pandas
 <div class="codehilite"><pre>path = &#39;ex2data1.txt&#39;
 data = pd.read_csv(path, header=None, names=[&#39;Exam 1&#39;, &#39;Exam 2&#39;, &#39;Admitted&#39;])
 data.head()
-</pre></div></article></body></html>
+positive = data[data[&#39;Admitted&#39;].isin([1])]
+negative = data[data[&#39;Admitted&#39;].isin([0])]
+</pre></div>
+这里<code>isin</code>指的就是is in，返回的事一个真值表，这里的positive和negative按照真值表取数据。</p>
+<p>{{h}_{\theta }}\left( x \right)=\frac{1}{1+{{e}^{-{{\theta }^{T}}X}}}</p></article></body></html>
